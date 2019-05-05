@@ -7,6 +7,25 @@
 		;		Write the result in the provided "fill" word.
 
 		;		Your code here
+		;		Algorithm
+		;- Add biased exponents of the two numbers, subtracting the bias from the 
+		;   sum to get the new biased exponent
+		;-Multiply the significands
+		;-Normailize the product if necessary, shifting it right and incrementing 
+		;  the exponent
+		;-Overflow? Yes- check if in range of exp, if not exception
+		;-No? Round the significand to the appropiate number of bits
+		;  Still normalized? No- branch to normalize routine
+		;-Yes? Set the sign of the product to positive if the signs of original
+		;  operands are the same, if they are different make the sign negative
+		;-Done 
+		;
+		;
+		;
+		;
+		;
+		;
+		
 
 floats	DCD		0xa0bcff0d, 0x13c0adea
 result	FILL	8
